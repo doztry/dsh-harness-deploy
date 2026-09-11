@@ -1,0 +1,11 @@
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+startCommand = "node start.mjs"
+# Customer-facing: always bring the process back unless the deploy is intentionally stopped
+restartPolicyType = "ALWAYS"
+restartPolicyMaxRetries = 100
+healthcheckPath = "/__health"
+healthcheckTimeout = 30

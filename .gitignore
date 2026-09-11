@@ -1,0 +1,11 @@
+node_modules/
+.npm/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+.dsh/
+**/.dsh/
+dist/
+.railway/

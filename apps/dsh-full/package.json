@@ -1,0 +1,15 @@
+{
+  "name": "dsh-railway",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "start": "node start.mjs"
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh": "0.1.2-rc.1"
+  },
+  "type": "module"
+}
