@@ -1,0 +1,8 @@
+{
+  "name": "dsh-web-search-stack",
+  "version": "0.1.0",
+  "description": "Lean multi-engine keyless web search with auto-failover for DSH",
+  "type": "commonjs",
+  "main": "lib/index.js",
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}

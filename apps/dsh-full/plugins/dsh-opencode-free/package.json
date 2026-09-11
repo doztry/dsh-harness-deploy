@@ -1,0 +1,16 @@
+{
+  "name": "dsh-opencode-free",
+  "version": "0.1.0",
+  "description": "Lean keyless OpenCode free models for DSH",
+  "type": "commonjs",
+  "main": "lib/index.js",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*",
+    "@deepseek-ai/dsh-llm": "*"
+  }
+}

@@ -1,0 +1,8 @@
+- insert:
+    - id: dsh-web-search-stack
+      name: dsh-web-search-stack
+      inject: [web]
+- replace:
+    - id: web
+      config:
+        searchProvider: search-stack

@@ -1,0 +1,15 @@
+- insert:
+    - id: dsh-lean-search
+      name: dsh-lean-search
+      inject:
+        - web
+- replace:
+    - id: web
+      config:
+        searchProvider: lean-search
+- replace:
+    - id: web-search-deepseek
+      disabled: true
+- replace:
+    - id: llm-deepseek
+      disabled: true
