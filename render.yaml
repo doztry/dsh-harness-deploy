@@ -1,0 +1,20 @@
+# Render Blueprint — Deploy from https://github.com/doztry/dsh-harness-deploy
+# Root Directory in dashboard: apps/dsh-full
+services:
+  - type: web
+    name: dsh-full
+    runtime: docker
+    rootDir: apps/dsh-full
+    plan: starter
+    healthCheckPath: /__health
+    envVars:
+      - key: PORT
+        value: "8080"
+      - key: OPENCODE_FREE_API_KEY
+        value: public
+      - key: AUTH_REQUIRED
+        value: "0"
+      - key: CAPACITY_MAX_INFLIGHT
+        value: "2"
+      - key: NODE_ENV
+        value: production
